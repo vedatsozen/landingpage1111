@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body class="h-screen max-w-screen overflow-x-hidden">
+
+    <div class="colors fixed top-4 right-4 flex flex-row justify-center items-center gap-4">
+        <div class="color color1 h-6 w-6 bg-red-500"></div>
+        <div class="color color2 h-6 w-6 bg-green-500"></div>
+        <div class="color color3 h-6 w-6 bg-blue-500"></div>
+    </div>
+
+    <script>
+        $(".color1").click(function() {
+            $("body").addClass("bg-red-500").removeClass("bg-green-500 bg-blue-500");
+        });
+
+        $(".color2").click(function() {
+            $("body").addClass("bg-green-500").removeClass("bg-red-500 bg-blue-500");
+        });
+
+        $(".color3").click(function() {
+            $("body").addClass("bg-blue-500").removeClass("bg-red-500 bg-green-500");
+        });
+
+       
+    </script>
+
+    <div class="fixed top-4 left-4 flex flex-col justify-center items-center gap-4">
+
+        
+    <a href="#" class="py-2 px-4">
+        Home
+    </a>
+
+    <a href="#aboutus" class="py-2 px-4">
+        About Us
+    </a>
+
+    
+    <a href="#contact" class="py-2 px-4">
+        Contact
+    </a>
+
+    </div>
+
+    <header class="h-screen max-w-screen flex flex-col justify-center items-center gap-4">
+        <h1 class="text-5xl font-bold text-white">Lorem ipsum dolor sit amet.</h1>
+        <p class="text-sm text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem odio officia minus dolores enim nihil in doloremque tenetur labore.</p>
+        <div class="photos h-1/3 flex flex-row justify-center items-center gap-4">
+            <img src="imgs/card1.jpg" class="h-full w-1/3">
+              <img src="imgs/card2.jpg" class="h-full w-1/3">
+                <img src="imgs/card3.jpg" class="h-full w-1/3">
+        </div>
+    </header>
+
+    <section id="aboutus" class="h-screen max-w-screen flex flex-col justify-center items-center">
+        <h1 class="text-5xl font-bold text-white">ABOUT US</h1>
+        <div class="mt-8 h-8/12 w-8/12 flex flex-row justify-center items-center">
+            <div class="h-full w-1/2">
+                <img src="imgs/card1.jpg" class="h-full w-full object-cover">
+            </div>
+            <div class="h-full w-1/2 border border-2 flex flex-col justify-center items-center text-center gap-4 p-8 bg-white">
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut totam, voluptatum praesentium doloremque iste dicta debitis. Illo quae aliquam beatae!</p>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ex mollitia accusamus, fuga quaerat tempora enim facere quod architecto officia.</p>
+                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, sunt harum? Ipsum, dolorum similique veniam delectus odio necessitatibus esse? Asperiores.</p>
+            </div>
+        </div>"
+    </section>
+
+    <section id="contact" class="h-screen max-w-screen flex flex-col justify-center items-center">
+
+        <h1 class="text-5xl font-bold text-white">CONTACT</h1>
+
+        <div class="border border-2 h-[400px] w-8/12 mt-8 flex flex-row justify-center items-center">
+
+        <div class="h-full w-1/2 text-center flex flex-col justify-center items-center bg-white p-8">
+            <i class="bi bi-house text-3xl"></i>
+            <p>Home Address</p>
+            <i class="bi bi-telephone text-3xl mt-4"></i>
+            <p>0 123 456 789</p>
+            <i class="bi bi-envelope text-3xl mt-4"></i>
+            <p class="adres">tailwindcss@gmail.com</p>"
+        </div>
+        <div class="h-full w-1/2">
+            <iframe class="h-full w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.99640957943!2d-122.52000211454218!3d37.75780703847793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20Kaliforniya%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2str!4v1774740671591!5m2!1str!2str"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        </div>
+    </section>
+
+    <div class="popupdiv hidden fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-[500px] w-8/12">
+        <img id="popupimg" src="imgs/card1.jpg" class="h-full w-full">
+    </div>
+
+</body>
+</html>
